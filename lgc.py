@@ -27,11 +27,10 @@ class LCG:
         try:
             x = self.seed
             count = 0
-            while True:
+            while x != self.seed:
                 x = self._lcg(x)
                 count += 1
-                if x == self.seed:
-                    return count
+            return count
         except:
             return -1
 

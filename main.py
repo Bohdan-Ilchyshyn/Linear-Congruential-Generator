@@ -35,7 +35,7 @@ def main():
     if args.p:
         period = generator.get_period()
         if period == -1:
-            print('\033[91m' + 'list too small to calculate period!!!')
+            print('\033[91m' + 'Error!!!')
         else:
             print('\033[92m' + 'Period = ' + str(period))
 
